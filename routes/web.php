@@ -5,6 +5,7 @@ use App\Http\Controllers\Entregas_Controller;
 use App\Http\Controllers\Medicoes_Controller;
 use App\Http\Controllers\Atividades_Controller;
 use App\Http\Controllers\Home_controller;
+use App\Http\Controllers\Usuario;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,8 +21,10 @@ use Illuminate\Support\Facades\Route;
 
 # Home
 http://localhost:3000/
-    Route::get('/',[Home_controller::class, 'index']);
+
+    Route::get('/',[Usuario::class, 'index']);
     #Route::get('/','http://localhost:3000/');
+    
     Route::post('/home',[Home_controller::class, 'index']);
     
 # Rotas de Projetos
