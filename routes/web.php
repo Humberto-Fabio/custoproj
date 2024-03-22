@@ -5,7 +5,7 @@ use App\Http\Controllers\Entregas_Controller;
 use App\Http\Controllers\Medicoes_Controller;
 use App\Http\Controllers\Atividades_Controller;
 use App\Http\Controllers\Home_controller;
-use App\Http\Controllers\Usuario;
+use App\Http\Controllers\Usuario_Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,14 +20,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 # Home
-http://localhost:3000/
 
-    Route::get('/',[Usuario::class, 'index']);
+    http://localhost:3000/
+
+    Route::get('/',[Usuario_Controller::class, 'index']);
     #Route::get('/','http://localhost:3000/');
     
     Route::post('/home',[Home_controller::class, 'index']);
     
 # Rotas de Projetos
+    
     #Route::get('/',[Projetos_Controller::class, 'index']);
     Route::post('/projetos',[Projetos_Controller::class, 'index']);
     Route::post('/projetos-new',[Projetos_Controller::class, 'create']);
