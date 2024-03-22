@@ -19,15 +19,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-# Home
-
-    http://localhost:3000/
-
+# Rotas de Usuario | Login
     Route::get('/',[Usuario_Controller::class, 'index']);
+
+# Home
+    #http://localhost:3000/
     #Route::get('/','http://localhost:3000/');
-    
     Route::post('/home',[Home_controller::class, 'index']);
-    
+
 # Rotas de Projetos
     
     #Route::get('/',[Projetos_Controller::class, 'index']);

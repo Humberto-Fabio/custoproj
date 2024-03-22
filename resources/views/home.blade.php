@@ -14,16 +14,15 @@
     
     <div id="form-inner">
     
-        <form  class="Form_Menu" name="Frm_User" action="/User" method="POST">
-                @csrf
-                <input Name="Novo_User" type="submit" value="Novo Usuario">
-        </form>
-
         <form class="Form_Menu" name="Frm_Projetos" action="/projetos" method="POST">
                 @csrf
-                <input Name="Nova_Projeto" type="submit" value="Projetos">
+                <input Name="Projetos" type="submit" value="Meus Projetos">
         </form>
 
+        <form  class="Form_Menu" name="Frm_User" action="/" method="GET">
+                @csrf
+                <input Name="Logout" type="submit" value="Logout">
+        </form>
 
     </div>
 </div>    

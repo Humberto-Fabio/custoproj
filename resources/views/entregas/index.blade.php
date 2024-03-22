@@ -55,6 +55,7 @@
     
         <form class="Form_Menu" name="Frm_Delete" action="/entregas-delete" method="POST">
             @csrf
+            <input Name="id_projeto" type="hidden" value="{{$entrega->id_projeto}}">
             <input Name="id_medicao" type="hidden" value={{$entrega->id_medicao}}>
             <input Name="medicao" type="hidden" value={{$entrega->medicao}}>
             <input Name="id" type="hidden" value={{$entrega->id}}>
