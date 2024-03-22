@@ -1,0 +1,140 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+  
+  h1{
+    margin: 0;
+    padding-bottom: 1rem;
+    font-family: "Roboto";
+    color: coral; 
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+   }
+
+  .linha_form {
+    padding-bottom: 0.5rem;
+  }
+
+  #form_cadastro {
+    /*width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style:solid;
+    border-color:rgb(223, 228, 230);
+    display: flex;*/
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .titulo_campo_form {
+    margin-bottom: 0.1rem;
+    text-align: left;
+    font-size: 0.8rem;
+    display: flex;
+  }
+  .campo_form {
+    color: blue;
+    padding: 0.25rem;
+    border-style: solid;
+    border-color:rgb(236, 236, 236);
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .btn_form {
+
+    padding-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  #about-container {
+    flex: 1.4;
+    padding: 4rem;
+  }
+
+  .linha_azul {
+     margin-bottom: 0.5rem;
+     width: 80%;
+     height: 1px;
+  }
+
+  .Title_Projeto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-size: large;
+    color: blue;
+    padding-bottom: 0.5rem;
+  }
+
+  .Title_Medicao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-size: large;
+    color:brown;
+    padding-bottom: 0.25rem;
+  }
+
+  .Title_Entrega {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    font-size: large;
+    color:black;
+    padding-bottom: 0.25rem;
+  }
+
+  #Title_Atividade {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:forestgreen;
+    padding-bottom: 0.35rem;
+  }
+  .Form_Menu {
+    align-items:left;
+    margin-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Apresentação do evento */
+
+  #brand {
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
+  }
+  
+  #form-inner {
+    margin-bottom: 1.5rem;
+    padding-right: 15px;
+    border: 2px solid #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: line;
+    align-items: left;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 450px) {
+    body {
+      flex-direction: column;
+    }
+  
+    #about-container {
+      padding: 2rem;
+      padding-bottom: 0;
+    }
+  }
